@@ -4,10 +4,12 @@ import Ignite
 struct Blog: StaticPage {
     var title = "Blog"
     
-    func body(context: PublishingContext) -> [any BlockElement] {
-        Section {
-            for content in context.allContent.sorted(by: {$0.date > $1.date }) {
-                ContentPreview(for: content)
+    @Environment(\.articles) var articles
+    
+    var body: some HTML {
+        Grid(alignment: .top) {
+            ForEach(articles.all.sorted(by: { $0.date > $1.date })) { article in
+                ArticlePreview(for: article)
                     .margin(.vertical, .medium)
                     .width(4)
             }

@@ -48,15 +48,15 @@ I've always appreciated how good Xcode was with information density on screen.
 In its current iteration, it comes bundled with an amazing set of tools for Apple platform development.
 But, as with much of Apple's recent software, it's quality seems to be in continual decline.
 
-When Xcode Server first launched, I was all over it. I really appreciated have a bundled CI solutions (even if you needed OS X Server 😞 to run it.)
-I've even gone so far to have written a framework and app that's only job is to interact with the Xcode Server API.
+When Xcode Server first launched, I was all over it. I really appreciated having a bundled CI solution (even if you needed OS X Server 😞 to run it.)
+I've even gone so far to have written a framework and app whose only job is to interact with the Xcode Server API.
 But, the last couple of versions have completely broken my ability to rely and use this product.
 The key thing Xcode Server is designed to do, is to build (_integrate_) your project, run tests, and spit out a build product when successful.
 So why doesn't it do that?
 
 I've continued to see nothing but the error noted about for _years_ now, and have all but abandoned the idea of using the product for what it was intended.
 
-Please Apple... fix it.
+Please Apple… fix it.
 
 ---
 

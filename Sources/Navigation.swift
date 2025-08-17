@@ -1,12 +1,12 @@
 import Foundation
 import Ignite
 
-struct Navigation: Component {
-    func body(context: PublishingContext) -> [any PageElement] {
+struct Navigation: HTML {
+    var body: some HTML {
         NavigationBar(logo: "Richard Piazza") {
-            Link("About", target: About())
-            Link("Apps", target: Apps())
-            Link("Blog", target: Blog())
+            Link("About", target: "/about")
+            Link("Apps", target: "/apps")
+            Link("Blog", target: "/blog")
             
             Dropdown("@richardpiazza") {
                 Link("GitHub", target: "https://github.com/richardpiazza")
@@ -18,5 +18,6 @@ struct Navigation: Component {
         .navigationBarStyle(.dark)
         .background(.darkSlateBlue)
         .position(.stickyTop)
+        .ignorePageGutters()
     }
 }

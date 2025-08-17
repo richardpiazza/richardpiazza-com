@@ -4,8 +4,8 @@ import Ignite
 struct About: StaticPage {
     var title = "About"
     
-    func body(context: PublishingContext) -> [any BlockElement] {
-        Section {
+    var body: some HTML {
+        Grid {
             Text("2022-Current")
                 .width(2)
             
@@ -21,7 +21,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2021-2022")
                 .width(2)
             
@@ -37,7 +37,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2018-2021")
                 .width(2)
             
@@ -53,7 +53,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2018")
                 .width(2)
             
@@ -77,7 +77,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2017")
                 .width(2)
             
@@ -93,7 +93,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2011-2015")
                 .width(2)
             
@@ -113,7 +113,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2011")
                 .width(2)
             
@@ -133,7 +133,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2010-2018")
                 .width(2)
             
@@ -149,7 +149,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2007-2009")
                 .width(2)
             
@@ -173,7 +173,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2004-2007")
                 .width(2)
             
@@ -193,7 +193,7 @@ struct About: StaticPage {
             .width(10)
         }
         
-        Section {
+        Grid {
             Text("2003-2004")
                 .width(2)
             
